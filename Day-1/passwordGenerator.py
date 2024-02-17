@@ -34,3 +34,13 @@ for _ in range(nr_symbols):
   password+= random.choice(symbols)
     
 print(password)
+
+# shuffle the password.
+
+password_list = list(password)
+random.shuffle(password_list)
+
+final_password = ''.join("password_list)
+
+    
+
