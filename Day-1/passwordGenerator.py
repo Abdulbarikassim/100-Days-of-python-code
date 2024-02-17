@@ -40,7 +40,7 @@ print(password)
 password_list = list(password)
 random.shuffle(password_list)
 
-final_password = ''.join("password_list)
+final_password = ''.join("password_list")
 
     
 
