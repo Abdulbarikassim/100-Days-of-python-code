@@ -18,3 +18,19 @@ nr_symbols = int(input(f"How many symbols do you want in you password?\n "))
 
 password = ""
 
+# Generate the random letters using a for loop 
+
+for _ in range(nr_letters):
+  password+=random.choice(letters)
+  
+# Generate the number numbers. 
+  
+  for _ in range(nr_numbers):
+    password+=random.choice(numbers)
+    
+#Generate the symbol 
+
+for _ in range(nr_symbols):
+  password+= random.choice(symbols)
+    
+print(password)
