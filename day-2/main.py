@@ -10,12 +10,12 @@ screen.setup(height=500,width=500)
 user_bet  = screen.textinput(title="Enter your bet.",prompt="Enter the color of the turtle that will win the race: ")
 colors = ["red","brown","green","blue","yellow","purple"]
 
-# for i in range(0,6):
-#   new_turtle = Turtle("turtle")
-#   new_turtle.color(colors[i])
-#   new_turtle.penup()
-#   new_turtle.goto(x=-230,y=-100+i*40)
-#   turtles.append(new_turtle)
+for i in range(0,6):
+  new_turtle = Turtle("turtle")
+  new_turtle.color(colors[i])
+  new_turtle.penup()
+  new_turtle.goto(x=-230,y=-100+i*40)
+  turtles.append(new_turtle)
   
 
 # if user_bet:
