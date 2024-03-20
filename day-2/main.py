@@ -18,22 +18,22 @@ for i in range(0,6):
   turtles.append(new_turtle)
   
 
-# if user_bet:
-#   is_game_on = True
+if user_bet:
+  is_game_on = True
   
-# while is_game_on:
-#   for turtle in turtles:
-#     if turtle.xcor() > 230:
-#       is_game_on = False
-#       winning_color = turtle.pencolor()
-#       if winning_color == user_bet:
+while is_game_on:
+  for turtle in turtles:
+    if turtle.xcor() > 230:
+      is_game_on = False
+      winning_color = turtle.pencolor()
+      if winning_color == user_bet:
       
-#         print(f"You've WON! {winning_color} is the color of the winning Turtle.")
-#       else:
-#         print(f"You've LOST! {winning_color} is the color of the winning Turtle.")
+        print(f"You've WON! {winning_color} is the color of the winning Turtle.")
+      else:
+        print(f"You've LOST! {winning_color} is the color of the winning Turtle.")
 
-#     rand_distance = random.randint(0,10)
-#     turtle.forward(rand_distance)
+    rand_distance = random.randint(0,10)
+    turtle.forward(rand_distance)
 
 
 
