@@ -9,4 +9,4 @@ CHALLENGE : RACING TURTLE.
     4.creating Turtles and setting shapes.
     5.Getting user-input.
     6.Looping through the turtles and colors.
-    7.use a while to repeat the game by creating a variable with a boolean.
+    7.use a while loop to repeat the game by creating a variable with a boolean.
