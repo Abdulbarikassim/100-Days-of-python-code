@@ -1,2 +1,56 @@
 CHALLENGE : SNAKE GAME.
 
+CHALLENGE : SNAKE  GAME.
+What we are going to make a the end of the day:
+Break the problem into small solvable pieces:  
+  1. Create a snake body.
+  2.Move the snake.
+  3.control the snake. 
+  4.Detect collision with food.
+  5.create a score board.
+  6.Detect collision with wall. 
+  7.Detect collision with tail.
+
+Range function:
+  In python range() function typically take three integer inputs:
+    1.start: This is the starting value of the sequence.
+    2.stop: This is the ending value of the sequence.it defines where the sequence ends.
+    3.step: This is the amount by which the sequence advances form one elements to the next.
+
+    The general syntax of the `range()` function is as follows: 
+      range(start ,stop,step)
+
+Here are some notes for your Snake class:
+
+1. Initialization:
+    - The `__init__` method initializes the Snake object.
+    - It initializes the `segments` list to store the Turtle objects
+      representing the snake's body segments.
+    - It calls the `create_snake` method to create the initial segments of the snake.
+
+2. Creating the Snake:
+    - The `create_snake` method creates the initial segments of the snake.
+    - It iterates over the `STARTING_POSITIONS` list to determine the positions of the segments.
+    - For each position, it creates a new Turtle object with a square shape, white color, and places it at the specified position.
+    - It adds each newly created segment to the `segments` list.
+
+3. Moving the Snake:
+    - The `move` method moves the snake forward by one step.
+    - It iterates over the segments of the snake in reverse order (from the last segment to the first).
+    - For each segment (except the first one), it sets its position to the position of the preceding segment.
+    - Then, it moves the first segment (head) forward by `MOVE_DISTANCE` units.
+
+4.Controlling the movement of the snake : 
+  If we want to control the snake using the keyboard we use function from Turtle:
+  `onkey-method` which takes two input the function and the keyword.
+
+  we have to create four method :
+  set-heading of the methods according to the direction.  
+  1.Up : 
+    use the set-heading method in (90).
+  2.Down :
+    use the set-heading(270)
+  3.Right : 
+    use the set-heading(90)
+  4.Left :
+    use the set-heading(0)
