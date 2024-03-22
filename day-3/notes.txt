@@ -1,6 +1,6 @@
 CHALLENGE : SNAKE GAME.
 
-CHALLENGE : SNAKE  GAME.
+
 What we are going to make a the end of the day:
 Break the problem into small solvable pieces:  
   1. Create a snake body.
@@ -20,7 +20,7 @@ Range function:
     The general syntax of the `range()` function is as follows: 
       range(start ,stop,step)
 
-Here are some notes for your Snake class:
+Here are some notes for the  Snake class:
 
 1. Initialization:
     - The `__init__` method initializes the Snake object.
