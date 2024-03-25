@@ -54,3 +54,29 @@ Here are some notes for the  Snake class:
     use the set-heading(90)
   4.Left :
     use the set-heading(0)
+
+5.Collision with Food
+   - Your current implementation correctly detects collision with the food when the distance between the snake's head and the food is less than 15 (which seems to be the radius of your food object).
+   - Upon collision with the food:
+     - You refresh the position of the food.
+     - Extend the snake's length.
+     - Update the scoreboard to reflect the increase in score.
+
+6.Collision with Wall
+   - Wall collision detection is based on the boundaries of the screen (assuming the screen dimensions are 600x600).
+   - If the snake's head exceeds any of these boundaries, it's considered a collision with the wall.
+   - Upon collision with the wall:
+     - The game ends.
+     - The scoreboard displays a game over message.
+
+7.Scoreboard
+   - The scoreboard keeps track of the player's score.
+   - It updates every time the snake eats food.
+   - When the game ends (due to collision with the wall or the snake itself), the scoreboard displays a game over message.
+
+8.Potential Improvements
+   - Consider adjusting the collision detection for the wall. Instead of hardcoding specific coordinates, you could use the screen dimensions to make it more dynamic.
+   - Implement a feature where the game speeds up as the player's score increases, making the game more challenging.
+   - Add functionality to display the highest score achieved by the player, and update it when a new high score is reached.
+   - Enhance the game over screen by displaying additional information such as the player's final score and an option to restart the game.
+
