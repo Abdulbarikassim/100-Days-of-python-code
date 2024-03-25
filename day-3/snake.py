@@ -32,6 +32,10 @@ class Snake():
     new_turtle.penup()
     new_turtle.goto(position)
     self.segments.append(new_turtle)
+    
+  def extend(self):
+    self.add_segments(self.segments[-1].position())
+    
       
   def move(self):
       for seg_num in range(len(self.segments)-1,0,-1):
