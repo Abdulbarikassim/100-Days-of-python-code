@@ -11,4 +11,17 @@ class Paddle(Turtle):
     self.penup()
     self.shapesize(stretch_wid=4,stretch_len=1)
     self.goto(position)
+    self.x_move = 20
+    self.y_move = 20
     
+  
+  # create move method.
+  
+  def go_up(self):
+    new_y = self.ycor() + self.y_move
+    self.goto(self.xcor(),new_y)
+    
+  def go_down(self):
+     new_y = self.ycor() - self.y_move
+     self.goto(self.xcor(),new_y)
+   
