@@ -23,8 +23,8 @@ screen.listen()
 
 screen.onkey(r_paddle.go_up,"Up")
 screen.onkey(r_paddle.go_down,"Down")
-screen.onkey(l_paddle.go_up,"W")
-screen.onkey(l_paddle.go_down,"S")
+screen.onkey(l_paddle.go_up,"w")
+screen.onkey(l_paddle.go_down,"s")
 
 
 
@@ -41,7 +41,18 @@ while game_is_on:
     # it needs to bounce. 
        ball.bounce_y()
        
-       
+  # Detect collision with the paddle and bounce.
+  
+  if ball.distance(r_paddle) < 40 or ball.distance(l_paddle) < 40  :
+    ball.bounce_x()
+    
+  # Detect when the ball misses the paddle .
+  # what should happen is: 
+  #1. the ball should come back to the center and the ball moves in opposite direction.
+  #2. According to  where the ball missed the opposite opponent get's a point.
+  
+  if ball.xcor() > 390 or ball.xcor() < -390 : 
+    ball.reset_position()
     
   
   
