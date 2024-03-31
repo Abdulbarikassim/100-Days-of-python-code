@@ -1,0 +1,60 @@
+CHALLENGE : PONG GAME.
+
+Breakdown the problem: 
+1.create the screen.
+2.create a paddle.
+3.create another paddle.
+4.create the ball and make it move.
+5.create collision with wall and bounce.
+6.Detect collision with paddle.
+7.Detect when paddle miss.
+8.Keep score.
+
+
+1. CREATE THE SCREEN.
+  -Import the screen module from the   Turtle.
+  -change the color of the screen to black. using the (bg-color method).
+  -set up the size of the screen with width and height of 800 and 600 respectively.
+  -use the screen on exit click method for the screen not exit immediately.
+
+
+2.Create a paddle.
+  -Inheritance: inherit the Turtle method and attribute to be used in the creating the paddle.
+  -create class name Paddle, Add attributes that change the color,size and position of the paddle.
+  -Add a method move that moves the paddle to either up or down using the up and down arrow keys.
+
+3.Create another paddle.
+  -create a paddle object with a different position to the first paddle.There position 
+    should be on right and left paddle.
+
+4.Create the ball and make it move.
+  -create a Ball that also inherit the Turtle method and attributes.
+  -change the shape,size and color of the ball.
+  -let the position of the ball be at the center.
+  -create a method that moves the ball. by add 10 or subtracting pixels on the y-axis 
+    of the screen.
+
+5.Create collision with the wall and bounce.
+  -when the ball hits the y-axis of the wall both negative and positive it should
+    bounce to the opposite direction.
+
+6.Detect collision wth the paddle and bounce.
+  -Using the distance method when can check if the ball collides with the paddle score  
+  if the collide you move the move to opposite direction.
+
+
+7.Detect when the paddle misses.
+  -when the ball goes out of the bounds at the edge of the screen on the 
+  y-axis.if yes,reset the ball's position to the center of the screen.
+  The ball should then start moving toward the other player.
+
+8.Create a scoreboard:
+- The `Scoreboard` class manages the display of scores for a Pong game.
+- It inherits from the `Turtle` class for graphical output.
+- It initializes with right (`r_score`) and left (`l_score`) scores set to 0.
+- The scores are displayed using white text on the screen.
+- The `update_score` method clears previous scores and writes the current scores using a specified font.
+- Methods `increase_rScore` and `increase_lScore` increment the respective scores by 1 
+  and update the display accordingly.
+
+  
