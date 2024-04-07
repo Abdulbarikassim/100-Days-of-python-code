@@ -18,3 +18,13 @@ class Player(Turtle):
       self.forward(10)
       
     
+    def at_finish_line(self):
+      if Player.ycor() > 280:
+        return True
+      else:
+        return False
+    
+    def reset_position(self):
+      self.goto(0,0)
+      
+      
