@@ -19,7 +19,7 @@ class Player(Turtle):
       
     
     def at_finish_line(self):
-      if Player.ycor() > 280:
+      if self.ycor() > 280:
         return True
       else:
         return False
