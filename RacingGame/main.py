@@ -2,6 +2,7 @@ from turtle import Turtle,Screen
 from car_manager import CarManger
 from player import Player
 from scoreboard import Scoreboard
+import time 
 
 
 screen = Screen()
@@ -17,9 +18,12 @@ car_manager = CarManger()
 
 is_game_on = True
 
-# while is_game_on:
-#   screen.update()
-#   car_manager.create_car()
+while is_game_on:
+  screen.update()
+  time.sleep(0.1)
+  car_manager.create_car()
+  car_manager.move()
+  
 
 
 
