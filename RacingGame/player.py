@@ -25,6 +25,6 @@ class Player(Turtle):
         return False
     
     def reset_position(self):
-      self.goto(0,0)
+      self.goto(STARTING_POSITION)
       
       
