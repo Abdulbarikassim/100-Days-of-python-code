@@ -28,7 +28,7 @@ class CarManger():
     
     
   def level_up(self):
-    self.speed_up += 10
+    self.speed_up += MOVE_INCREMENT
     
     
     

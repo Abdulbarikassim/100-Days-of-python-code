@@ -2,7 +2,7 @@ from turtle import Turtle,Screen
 from paddle import Paddle
 from ball import Ball
 import time
-
+from scoreboard import Scoreboard
 
 
 turtle = Turtle()
@@ -18,6 +18,9 @@ screen.tracer(0)
 r_paddle = Paddle((350,0)) # right paddle.
 l_paddle = Paddle((-350,0)) # left paddle.
 ball = Ball()
+scoreboard = Scoreboard()
+
+
 
 screen.listen()
 
@@ -51,9 +54,15 @@ while game_is_on:
   #1. the ball should come back to the center and the ball moves in opposite direction.
   #2. According to  where the ball missed the opposite opponent get's a point.
   
-  if ball.xcor() > 390 or ball.xcor() < -390 : 
+  if ball.xcor() > 390  : 
     ball.reset_position()
+    scoreboard.increase_lScore()
+
+  if ball.xcor() < -390 : 
+    ball.reset_position()
+    scoreboard.increase_rScore()
     
+        
   
   
   

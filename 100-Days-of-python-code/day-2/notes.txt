@@ -1,0 +1,12 @@
+CHALLENGE : RACING TURTLE.
+
+  The challenges for today is create a turtles racing using the 
+  turtle module. 
+  steps on achieving the project: 
+    1.import turtle module using OOP Concept and screen.
+    2.set up the screen height and width.
+    3.create a list of 6 colors.
+    4.creating Turtles and setting shapes.
+    5.Getting user-input.
+    6.Looping through the turtles and colors.
+    7.use a while loop to repeat the game by creating a variable with a boolean.

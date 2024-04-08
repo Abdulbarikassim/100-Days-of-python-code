@@ -22,6 +22,6 @@ class Scoreboard(Turtle):
     def increase_score(self):
       self.clear()
       self.score += 1
-      self.write(f"Score :{self.score}",font=FONT)
+      self.write(f"Score:{self.score}",font=FONT)
 
       
