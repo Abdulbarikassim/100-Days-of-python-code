@@ -1,0 +1,64 @@
+{% extends "webapp/base.html" %}
+
+{% block content %}
+
+
+    <h5> Welcome to the dashboard! {{user}}</h5>
+    <hr>
+
+    <a href="{% url "create-record" %}" class="btn  btn-outline-primary btn-sm">
+        create a new record
+    </a>
+    <hr>
+    
+    <table class="table    table-border">
+        <thead class="table table-light">
+            <tr>
+                <th class="col">ID</th>
+                <th class="col">Full Name</th>
+                <th class="col">Email</th>
+                <th class="col">Phone</th>
+                <th class="col">Address</th>
+                <th class="col">City</th>
+                <th class="col">Province</th>
+                <th class="col">country</th>
+
+                
+                <th class="col">Created Date</th>
+                <th class="col">Views</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% if records  %}
+
+                {% for record in records %}
+                
+                
+                
+            <tr>
+                <td>{{record.id}}</td>
+                <td>{{record.first_name}}  {{record.last_name}}</td>
+                <td>{{record.email}}</td>
+                <td>{{record.phone}}</td>
+                <td>{{record.address}}</td>
+                <td>{{record.city}}</td>
+                <td>{{record.Province}}</td>
+                <td>{{record.country}}</td>
+                <td>{{record.creation_date}}</td>
+                <td> <a href="{% url "record" record.id %}"><i class="fa-solid fa-eye"></i> </a></td>
+
+            </tr>
+            {% endfor %}
+
+            {% endif %}
+        </tbody>
+    </table>
+
+{% endblock %}
+
+
+
